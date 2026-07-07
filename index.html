@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सगाई समारोह निमंत्रण - मनीष संग अंशु</title>
+    <!-- Google Fonts for Elegant Hindi Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Noto+Serif+Devanagari:wght@400;700;900&family=Tiro+Devanagari+Hindi&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FAF4EA',
+                        warmCream: '#F8F2E8',
+                        gold: '#C79A3B',
+                        lightGold: '#E5C173',
+                        maroon: '#6B1E1E',
+                        deepRed: '#8E1B1B',
+                        charcoal: '#2D2D2D'
+                    },
+                    fontFamily: {
+                        yatra: ['"Yatra One"', 'cursive'],
+                        serifDev: ['"Noto Serif Devanagari"', 'serif'],
+                        tiro: ['"Tiro Devanagari Hindi"', 'serif'],
+                        kalam: ['"Kalam"', 'cursive']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Premium Handmade Paper Texture Overlay */
+        .paper-bg {
+            background-color: #FAF4EA;
+            background-image: radial-gradient(rgba(199, 154, 59, 0.04) 1px, transparent 0),
+                              radial-gradient(rgba(107, 30, 30, 0.02) 2px, transparent 0);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+            position: relative;
+        }
+        .paper-texture {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            opacity: 0.035;
+            pointer-events: none;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Gold Foil Effect */
+        .gold-foil {
+            background: linear-gradient(135deg, #B38728 0%, #FBF5B7 25%, #DAA520 50%, #FBF5B7 75%, #AA771C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.15));
+        }
+
+        /* Float Animations for Traditional Elements */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(3deg); }
+        }
+        @keyframes swing {
+            0%, 100% { transform: rotate(-3deg); transform-origin: top center; }
+            50% { transform: rotate(3deg); transform-origin: top center; }
+        }
+        .floating-bell {
+            animation: swing 4s ease-in-out infinite;
+        }
+
+        /* Blossom falling animation */
+        .petal {
+            position: absolute;
+            background: radial-gradient(circle, #fca5a5 0%, #ef4444 100%);
+            border-radius: 50% 0 50% 50%;
+            pointer-events: none;
+            opacity: 0.7;
+            z-index: 10;
+        }
+        .gold-flake {
+            position: absolute;
+            background: linear-gradient(135deg, #DAA520, #FBF5B7);
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0.6;
+            z-index: 10;
+        }
+
+        /* Entrance sequential animations */
+        .anim-fade { 
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1); 
+        }
+        .anim-show { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    </style>
+</head>
+<body class="bg-stone-100 min-h-screen flex items-center justify-center p-0 sm:p-4 md:p-8 font-serifDev selection:bg-gold/30">
+
+    <!-- Main Card Container -->
+    <main class="w-full max-w-2xl paper-bg shadow-[0_0_50px_rgba(107,30,30,0.15)] rounded-none sm:rounded-3xl border-8 border-double border-gold/40 relative overflow-hidden px-4 py-12 sm:px-12 sm:py-16">
+        <div class="paper-texture"></div>
+
+        <!-- Left Hanging Bell -->
+        <div class="absolute top-0 left-4 sm:left-10 w-8 sm:w-12 h-36 z-20 floating-bell pointer-events-none">
+            <svg viewBox="0 0 40 120" class="w-full h-full text-gold">
+                <line x1="20" y1="0" x2="20" y2="80" stroke="currentColor" stroke-width="2" />
+                <path d="M10 80 Q20 70 30 80 L35 105 A15 15 0 0 1 5 105 Z" fill="none" stroke="currentColor" stroke-width="2" />
+                <circle cx="20" cy="112" r="4" fill="currentColor" />
+                <path d="M15 75 Q20 80 25 75 Q20 70 15 75 Z" fill="currentColor" />
+            </svg>
+        </div>
+
+        <!-- Right Hanging Bell -->
+        <div class="absolute top-0 right-4 sm:right-10 w-8 sm:w-12 h-36 z-20 floating-bell pointer-events-none">
+            <svg viewBox="0 0 40 120" class="w-full h-full text-gold">
+                <line x1="20" y1="0" x2="20" y2="80" stroke="currentColor" stroke-width="2" />
+                <path d="M10 80 Q20 70 30 80 L35 105 A15 15 0 0 1 5 105 Z" fill="none" stroke="currentColor" stroke-width="2" />
+                <circle cx="20" cy="112" r="4" fill="currentColor" />
+                <path d="M15 75 Q20 80 25 75 Q20 70 15 75 Z" fill="currentColor" />
+            </svg>
+        </div>
+
+        <!-- Container for interactive flower falling -->
+        <div id="particle-container" class="absolute inset-0 pointer-events-none overflow-hidden z-10"></div>
+
+        <!-- Header Ornaments (Madhubani / Royal Corners) -->
+        <div class="absolute top-4 left-4 w-16 h-16 text-gold/30 opacity-75 pointer-events-none">
+            <svg viewBox="0 0 100 100" class="w-full h-full">
+                <path d="M0 0 L100 0 Q50 50 0 100 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M15 15 Q40 40 15 65" fill="none" stroke="currentColor" stroke-width="1"/>
+                <circle cx="15" cy="15" r="3" fill="currentColor"/>
+                <circle cx="35" cy="35" r="3" fill="currentColor"/>
+                <circle cx="15" cy="50" r="3" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="absolute top-4 right-4 w-16 h-16 text-gold/30 opacity-75 pointer-events-none transform rotate-90">
+            <svg viewBox="0 0 100 100" class="w-full h-full">
+                <path d="M0 0 L100 0 Q50 50 0 100 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M15 15 Q40 40 15 65" fill="none" stroke="currentColor" stroke-width="1"/>
+                <circle cx="15" cy="15" r="3" fill="currentColor"/>
+                <circle cx="35" cy="35" r="3" fill="currentColor"/>
+                <circle cx="15" cy="50" r="3" fill="currentColor"/>
+            </svg>
+        </div>
+
+        <!-- INNER CONTENT WRAPPER -->
+        <div class="relative z-20 flex flex-col items-center justify-center text-center">
+            
+            <!-- Ganesh invocation -->
+            <div class="anim-fade mb-4 text-maroon font-serifDev text-lg font-bold tracking-widest px-4 py-1 border-b border-gold/30">
+                ॥ श्री गणेशाय नमः ॥
+            </div>
+
+            <!-- Beautiful Hand-drawn Gold Vector Ganesh Ji Illustration -->
+            <div class="anim-fade w-32 h-32 my-4 text-gold transform hover:scale-105 transition-transform duration-500">
+                <svg viewBox="0 0 100 120" class="w-full h-full" filter="drop-shadow(0px 2px 4px rgba(107,30,30,0.2))">
+                    <!-- Head & Crown -->
+                    <path d="M50 15 Q52 8 50 2 Q48 8 50 15 Z" fill="currentColor"/>
+                    <path d="M35 28 L65 28 L58 15 L42 15 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M38 22 L62 22" stroke="currentColor" stroke-width="1.5"/>
+                    <circle cx="50" cy="19" r="2" fill="currentColor"/>
+                    
+                    <!-- Ears -->
+                    <path d="M35 34 C20 34 16 48 30 52 C34 45 34 38 35 34 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M65 34 C80 34 84 48 70 52 C66 45 66 38 65 34 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    
+                    <!-- Face and Trunk (Beautiful traditional curves) -->
+                    <path d="M35 34 Q50 32 65 34 C63 45 61 52 57 58 C53 64 54 75 51 86 C49 93 41 93 41 85 C43 78 46 72 47 62 C42 62 38 58 36 50 C35 44 35 38 35 34 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                    
+                    <!-- Trishul / Tilak on Forehead -->
+                    <path d="M47 34 Q50 42 53 34" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="50" y1="30" x2="50" y2="38" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="50" cy="33" r="1.5" fill="currentColor"/>
+
+                    <!-- Tusks -->
+                    <path d="M37 54 L31 56" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M63 54 L65 54" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+
+                    <!-- Modak on Trunk -->
+                    <path d="M41 85 Q41 81 44 81 Q47 81 47 85 Z" fill="currentColor"/>
+                    
+                    <!-- Decorative Jewels/Dots on Crown -->
+                    <circle cx="45" cy="25" r="1" fill="currentColor"/>
+                    <circle cx="50" cy="25" r="1" fill="currentColor"/>
+                    <circle cx="55" cy="25" r="1" fill="currentColor"/>
+                </svg>
+            </div>
+
+            <!-- Beautiful Madhubani Divider -->
+            <div class="anim-fade w-48 h-6 my-2 text-gold flex items-center justify-center">
+                <svg viewBox="0 0 200 20" class="w-full h-full">
+                    <line x1="0" y1="10" x2="80" y2="10" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="100" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="100" cy="10" r="1.5" fill="currentColor"/>
+                    <path d="M90 10 Q95 5 100 10 Q105 15 110 10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    <line x1="120" y1="10" x2="200" y2="10" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+            </div>
+
+            <!-- Invitation Greeting Text -->
+            <div class="anim-fade px-2 sm:px-6 my-6">
+                <p class="font-kalam text-lg sm:text-xl text-gold font-bold mb-3 tracking-wide">
+                    परमपिता परमेश्वर की असीम कृपा से
+                </p>
+                <p class="font-serifDev text-base sm:text-lg text-charcoal/90 leading-relaxed max-w-md mx-auto">
+                    हम आपको अपने सुपुत्र एवं सुपुत्री के <br>
+                    <span class="text-deepRed font-bold text-xl sm:text-2xl tracking-wide block my-2 font-tiro">सगाई संस्कार</span>
+                    में सादर आमंत्रित करते हैं।
+                </p>
+            </div>
+
+            <!-- Madhubani Floral Divider -->
+            <div class="anim-fade w-full max-w-sm my-4 text-gold/60">
+                <svg viewBox="0 0 400 20" class="w-full h-full">
+                    <path d="M10 10 Q30 2 50 10 T90 10 T130 10 T170 10 T210 10 T250 10 T290 10 T330 10 T370 10" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <path d="M10 10 Q30 18 50 10 T90 10 T130 10 T170 10 T210 10 T250 10 T290 10 T330 10 T370 10" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="90" cy="10" r="2.5" fill="#6B1E1E"/>
+                    <circle cx="210" cy="10" r="2.5" fill="#6B1E1E"/>
+                    <circle cx="330" cy="10" r="2.5" fill="#6B1E1E"/>
+                </svg>
+            </div>
+
+            <!-- BRIDE & GROOM SECTION -->
+            <div class="anim-fade w-full grid grid-cols-1 md:grid-cols-11 gap-4 items-center my-6">
+                
+                <!-- Groom (सुपुत्र) -->
+                <div class="md:col-span-5 flex flex-col items-center bg-warmCream/60 p-5 rounded-2xl border border-gold/25 shadow-sm">
+                    <span class="font-kalam text-gold font-bold text-sm sm:text-base tracking-widest uppercase">सुपुत्र</span>
+                    <h2 class="font-yatra text-3xl sm:text-4xl text-maroon my-2 hover:scale-105 transition-transform duration-300">
+                        मनीष शर्मा
+                    </h2>
+                    <p class="font-serifDev text-sm text-stone-600">
+                        श्री कामेश्वर शर्मा के सुपुत्र
+                    </p>
+                </div>
+
+                <!-- Divider with Rings (सगाई रिंग्स) -->
+                <div class="md:col-span-1 flex flex-col items-center justify-center py-2 md:py-0">
+                    <div class="hidden md:block w-0.5 h-16 bg-gradient-to-b from-transparent via-gold to-transparent"></div>
+                    <div class="my-2 transform hover:rotate-12 transition-transform duration-500 text-gold w-14 h-14">
+                        <svg viewBox="0 0 100 100" class="w-full h-full" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))">
+                            <!-- Left Ring -->
+                            <ellipse cx="42" cy="55" rx="20" ry="14" fill="none" stroke="currentColor" stroke-width="4" transform="rotate(-15 42 55)" />
+                            <polygon points="42,34 47,40 42,44 37,40" fill="#E5C173" stroke="currentColor" stroke-width="1"/>
+                            <!-- Right Ring -->
+                            <ellipse cx="58" cy="50" rx="20" ry="14" fill="none" stroke="#DAA520" stroke-width="4" transform="rotate(15 58 50)" />
+                            <polygon points="58,29 63,35 58,39 53,35" fill="#FBF5B7" stroke="#DAA520" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="hidden md:block w-0.5 h-16 bg-gradient-to-b from-transparent via-gold to-transparent"></div>
+                </div>
+
+                <!-- Bride (सुपुत्री) -->
+                <div class="md:col-span-5 flex flex-col items-center bg-warmCream/60 p-5 rounded-2xl border border-gold/25 shadow-sm">
+                    <span class="font-kalam text-gold font-bold text-sm sm:text-base tracking-widest uppercase">सुपुत्री</span>
+                    <h2 class="font-yatra text-3xl sm:text-4xl text-maroon my-2 hover:scale-105 transition-transform duration-300">
+                        अंशु शर्मा
+                    </h2>
+                    <p class="font-serifDev text-sm text-stone-600">
+                        श्री शंकर कुमार शर्मा की सुपुत्री
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Connection Text -->
+            <div class="anim-fade my-4">
+                <p class="font-serifDev text-stone-500 text-base italic">के पावन</p>
+                <p class="font-yatra text-4xl sm:text-5xl text-deepRed gold-foil tracking-wider py-2">
+                    सगाई समारोह
+                </p>
+                <p class="font-serifDev text-stone-500 text-base italic">में आपकी गरिमामयी उपस्थिति प्रार्थनीय है।</p>
+            </div>
+
+            <!-- EVENT DETAILS CARD -->
+            <div class="anim-fade w-full my-8 bg-warmCream border-2 border-dashed border-gold/40 rounded-2xl p-6 sm:p-8 relative shadow-inner">
+                
+                <!-- Corner Mango Leaves (शुभ आम के पत्ते) -->
+                <div class="absolute -top-3 -left-3 w-10 h-10 text-gold/70 transform rotate-45">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <path d="M50 0 C70 30 70 70 50 100 C30 70 30 30 50 0 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M50 0 L50 100" stroke="currentColor" stroke-width="1"/>
+                        <path d="M50 20 Q65 35 50 50" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M50 50 Q35 65 50 80" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="absolute -top-3 -right-3 w-10 h-10 text-gold/70 transform -rotate-45">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <path d="M50 0 C70 30 70 70 50 100 C30 70 30 30 50 0 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M50 0 L50 100" stroke="currentColor" stroke-width="1"/>
+                        <path d="M50 20 Q65 35 50 50" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M50 50 Q35 65 50 80" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+
+                <!-- Date & Day (TIME REMOVED) -->
+                <div class="mb-6">
+                    <p class="font-kalam text-gold font-bold text-lg">शुभ तिथि</p>
+                    <div class="flex items-center justify-center gap-4 my-2">
+                        <span class="w-8 h-[1px] bg-gold/40"></span>
+                        <h3 class="font-serifDev text-2xl sm:text-3xl text-maroon font-bold tracking-wide">
+                            16 जुलाई 2026
+                        </h3>
+                        <span class="w-8 h-[1px] bg-gold/40"></span>
+                    </div>
+                    <p class="font-serifDev text-stone-700 text-base">
+                        गुरुवार (Thursday)
+                    </p>
+                </div>
+
+                <!-- Divider -->
+                <div class="w-24 h-0.5 bg-gold/30 mx-auto my-4"></div>
+
+                <!-- Venue / स्थान -->
+                <div>
+                    <p class="font-kalam text-gold font-bold text-lg mb-1">विवाह स्थल</p>
+                    <h4 class="font-serifDev text-xl sm:text-2xl text-deepRed font-bold mb-2">
+                        Patel Vivah Bhavan
+                    </h4>
+                    <p id="venueAddress" class="font-serifDev text-stone-700 text-sm sm:text-base leading-relaxed max-w-md mx-auto">
+                        Old Motihari Road, Kolhua Chowk, Near Paras Mall, Muzaffarpur, Bihar
+                    </p>
+                </div>
+
+                <!-- Action Buttons: Map Link with Auto Address Search -->
+                <div class="mt-6 flex flex-wrap gap-4 items-center justify-center">
+                    <!-- Google Map Link with Automatic Search Pattern -->
+                    <button onclick="searchAddressOnGoogle()" class="px-6 py-2.5 bg-maroon text-white font-serifDev text-sm rounded-full shadow-md hover:bg-deepRed transition-colors border border-gold flex items-center gap-2">
+                        <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        मानचित्र पर खोजें (Search on Google Maps)
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- GUESTBOOK / WHATSAPP REDIRECT SECTION -->
+            <div class="anim-fade w-full my-6 text-left border-t border-gold/30 pt-8">
+                <div class="text-center mb-6">
+                    <p class="font-kalam text-gold font-bold text-xl">स्नेह संदेश एवं मंगलकामनाएं</p>
+                    <p class="font-serifDev text-stone-500 text-xs sm:text-sm">वर-वधू को व्हाट्सएप (WhatsApp) द्वारा अपनी शुभकामनाएं और आशीर्वाद भेजें</p>
+                </div>
+
+                <!-- WhatsApp Sending Form -->
+                <form id="whatsappForm" class="space-y-4 max-w-md mx-auto">
+                    <div>
+                        <label for="guestName" class="block font-serifDev text-sm text-stone-700 font-semibold mb-1">आपका नाम :</label>
+                        <input type="text" id="guestName" required class="w-full px-4 py-2 bg-warmCream/70 border border-gold/30 rounded-lg text-charcoal focus:ring-1 focus:ring-gold focus:outline-none font-serifDev" placeholder="जैसे: राहुल कुमार">
+                    </div>
+                    <div>
+                        <label for="guestMessage" class="block font-serifDev text-sm text-stone-700 font-semibold mb-1">शुभकामना संदेश :</label>
+                        <textarea id="guestMessage" required rows="3" class="w-full px-4 py-2 bg-warmCream/70 border border-gold/30 rounded-lg text-charcoal focus:ring-1 focus:ring-gold focus:outline-none font-serifDev" placeholder="मनीष और अंशु को सगाई की अनंत शुभकामनाएं..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 bg-green-700 text-white font-semibold font-serifDev rounded-lg border border-green-600 hover:bg-green-800 transition-colors duration-300 shadow-md flex items-center justify-center gap-2">
+                        <!-- WhatsApp SVG Icon -->
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.458L0 24zm6.26-4.489c1.642.973 3.253 1.488 4.795 1.489 5.485.003 9.946-4.457 9.95-9.941.002-2.656-1.03-5.153-2.906-7.029C16.282 2.155 13.79 1.122 11.2 1.122 5.714 1.122 1.25 5.58 1.247 11.066c-.001 1.761.47 3.427 1.364 4.957l-1.02 3.727 3.824-1.002c1.473.805 2.915 1.22 4.302 1.222zM17.65 15c-.3-.15-1.78-.88-2.05-.98-.28-.1-.48-.15-.68.15-.2.3-.78.98-.95 1.18-.18.2-.35.23-.65.08-1.35-.67-2.22-1.18-3.04-2.58-.22-.38.22-.35.63-1.16.07-.15.03-.28-.02-.38-.05-.1-.48-1.16-.66-1.6-.18-.43-.37-.37-.51-.38-.13-.01-.28-.01-.43-.01-.15 0-.38.06-.58.28-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.57 2.41 3.81 3.38 1.17.5 1.89.58 2.56.48.42-.06 1.28-.52 1.46-1 .18-.48.18-.9 1.13-1 .09-.04-.15-.12-.22-.18z"/>
+                        </svg>
+                        व्हाट्सएप पर शुभकामनाएं भेजें
+                    </button>
+                </form>
+            </div>
+
+            <!-- FOOTER TRADITIONAL ILLUSTRATIONS -->
+            <div class="anim-fade w-full mt-8 flex items-center justify-between px-2 sm:px-6 pointer-events-none">
+                <!-- Bottom Left Kalash -->
+                <div class="w-14 h-14 text-gold opacity-80">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <path d="M30 45 C30 30 70 30 70 45 C70 65 65 85 50 90 C35 85 30 65 30 45 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M25 45 L75 45" stroke="currentColor" stroke-width="2"/>
+                        <path d="M35 45 Q50 15 65 45 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M25 45 Q15 25 35 38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M75 45 Q85 25 65 38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M50 45 L50 25" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M45 60 H55 M50 55 V65 M45 55 V60 M55 60 V65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <!-- Minimal Beautiful Text (Darshanabhilashi updated to Samast Sharma Parivar) -->
+                <div class="text-center">
+                    <p class="font-kalam text-xs text-stone-400">दर्शनाभिलाषी</p>
+                    <p class="font-serifDev text-xs text-stone-600 font-semibold">समस्त शर्मा परिवार</p>
+                    <p class="font-serifDev text-[10px] text-stone-400 mt-1">डिजिटल आमंत्रण पत्र</p>
+                </div>
+
+                <!-- Bottom Right Kalash -->
+                <div class="w-14 h-14 text-gold opacity-80">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <path d="M30 45 C30 30 70 30 70 45 C70 65 65 85 50 90 C35 85 30 65 30 45 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                        <path d="M25 45 L75 45" stroke="currentColor" stroke-width="2"/>
+                        <path d="M35 45 Q50 15 65 45 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <path d="M25 45 Q15 25 35 38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M75 45 Q85 25 65 38" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M50 45 L50 25" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M45 60 H55 M50 55 V65 M45 55 V60 M55 60 V65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Automatic Address Search on Google Maps
+        function searchAddressOnGoogle() {
+            const address = document.getElementById('venueAddress').innerText;
+            const searchUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+            window.open(searchUrl, '_blank');
+        }
+
+        // WhatsApp Redirection on Submit
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('guestName').value.trim();
+            const message = document.getElementById('guestMessage').value.trim();
+            const phoneNumber = "9504111765";
+
+            // Crafting a beautiful structured message
+            const formattedText = `*सगाई समारोह बधाई संदेश* 🌸\n\n*प्रेषक:* ${name}\n*संदेश:* ${message}`;
+            const encodedText = encodeURIComponent(formattedText);
+            
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+            window.open(whatsappUrl, '_blank');
+        });
+
+        // Trigger Animations on Load
+        window.onload = function() {
+            // Trigger sequential fade in
+            const anims = document.querySelectorAll('.anim-fade');
+            anims.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('anim-show');
+                }, index * 200);
+            });
+
+            // Create falling rose petals and gold flakes
+            createFoliageAndFlakes();
+        };
+
+        // Falling Flower Petals & Gold Flakes Logic
+        function createFoliageAndFlakes() {
+            const container = document.getElementById('particle-container');
+            if (!container) return;
+
+            setInterval(() => {
+                if (document.hidden) return;
+                
+                const petal = document.createElement('div');
+                const isGold = Math.random() > 0.55;
+                
+                if (isGold) {
+                    petal.className = 'gold-flake';
+                    const size = Math.random() * 5 + 3;
+                    petal.style.width = `${size}px`;
+                    petal.style.height = `${size}px`;
+                } else {
+                    petal.className = 'petal';
+                    const size = Math.random() * 8 + 6;
+                    petal.style.width = `${size}px`;
+                    petal.style.height = `${size}px`;
+                    petal.style.transform = `rotate(${Math.random() * 360}deg)`;
+                }
+
+                petal.style.left = `${Math.random() * 100}%`;
+                petal.style.top = `-20px`;
+
+                const duration = Math.random() * 8 + 6;
+                petal.style.transition = `transform ${duration}s linear, top ${duration}s linear, left ${duration}s ease-in-out`;
+                container.appendChild(petal);
+
+                setTimeout(() => {
+                    petal.style.top = `105%`;
+                    petal.style.left = `${parseFloat(petal.style.left) + (Math.random() * 20 - 10)}%`;
+                    petal.style.transform = `rotate(${Math.random() * 720}deg)`;
+                }, 50);
+
+                setTimeout(() => {
+                    petal.remove();
+                }, duration * 1000);
+
+            }, 750);
+        }
+    </script>
+</body>
+</html>
+
