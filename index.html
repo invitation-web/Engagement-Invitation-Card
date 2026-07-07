@@ -302,7 +302,7 @@
                     </svg>
                 </div>
 
-                <!-- Date & Day (TIME REMOVED) -->
+                <!-- Date & Day -->
                 <div class="mb-6">
                     <p class="font-kalam text-gold font-bold text-lg">शुभ तिथि</p>
                     <div class="flex items-center justify-center gap-4 my-2">
@@ -333,7 +333,6 @@
 
                 <!-- Action Buttons: Map Link with Auto Address Search -->
                 <div class="mt-6 flex flex-wrap gap-4 items-center justify-center">
-                    <!-- Google Map Link with Automatic Search Pattern -->
                     <button onclick="searchAddressOnGoogle()" class="px-6 py-2.5 bg-maroon text-white font-serifDev text-sm rounded-full shadow-md hover:bg-deepRed transition-colors border border-gold flex items-center gap-2">
                         <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
@@ -418,18 +417,20 @@
             window.open(searchUrl, '_blank');
         }
 
-        // WhatsApp Redirection on Submit
+        // WhatsApp Redirection with Country Code
         document.getElementById('whatsappForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const name = document.getElementById('guestName').value.trim();
             const message = document.getElementById('guestMessage').value.trim();
+            
+            // Country code 91 is prepended to ensure correct WhatsApp routing
             const phoneNumber = "919504111765";
 
             // Crafting a beautiful structured message
             const formattedText = `*सगाई समारोह बधाई संदेश* 🌸\n\n*प्रेषक:* ${name}\n*संदेश:* ${message}`;
             const encodedText = encodeURIComponent(formattedText);
             
-            const whatsappUrl = `https://wa.me/919504111765?text=${encodedText}`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
             window.open(whatsappUrl, '_blank');
         });
 
