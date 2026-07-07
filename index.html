@@ -423,13 +423,13 @@
             e.preventDefault();
             const name = document.getElementById('guestName').value.trim();
             const message = document.getElementById('guestMessage').value.trim();
-            const phoneNumber = "+919504111765";
+            const phoneNumber = "919504111765";
 
             // Crafting a beautiful structured message
             const formattedText = `*सगाई समारोह बधाई संदेश* 🌸\n\n*प्रेषक:* ${name}\n*संदेश:* ${message}`;
             const encodedText = encodeURIComponent(formattedText);
             
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+            const whatsappUrl = `https://wa.me/919504111765?text=${encodedText}`;
             window.open(whatsappUrl, '_blank');
         });
 
